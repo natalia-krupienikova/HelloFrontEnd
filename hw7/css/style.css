@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #3B3F45;
+}
+
+*{transition: all .1s ease-in;}
+
+*{margin: 0;}
+
+header {
+    background: #4A4F56;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF8984;
+    margin-top: 19px;
+    margin-bottom: 4px;
+}
+
+.lets-go {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF8984;
+    margin-bottom: 15px;
+}
+
+.shopping-list {
+    width: 534px;
+    background: #88839E;
+    margin: 20px auto 0;
+}
+
+.list:nth-child(2n+2) {
+    background-color: #7A7593;
+}
+
+.list:hover {
+    padding: 4px 0;
+    background-color: #FFF;
+}
+
+.input-conteiner {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    line-height: 21px;
+    color: #FFF;
+}
+
+.input-conteiner:hover {
+    background-color: #625E77;
+}
+
+.checkbox-custom:checked + .item .label-text {
+    text-decoration: line-through;
+}
+
+.checkbox-custom {
+    display: none;
+}
+
+.item {
+    display: flex;
+}
+
+.box {
+    height: 19px;
+    width: 19px;
+    display: inline-block;
+    border: none;
+    background-color: #FFF;
+    margin-right: 16px;
+}
+
+.label-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-custom:checked + label .box {
+    background-image: url(./../check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: none;
+    color: black;
+}
+
+.small {
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.small::before {
+    content: '(';
+}
+
+.small::after {
+    content: ')';
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 534px;
+    height: 45px;
+    border: 0;
+    background: #4a4f56;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ff8984;
+}
+
+button:hover {
+    background: #ff8984;
+    color: #4a4f56;
+}
