@@ -1,0 +1,38 @@
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+.benefits-container {
+    &__line {
+        border: 0;
+        height: 1px;
+        background:  #E4E4E4;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        padding: 0 30px;
+    }
+
+    &__text {
+        padding: 0 30px;
+        margin-bottom: 112px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .benefits-container {
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+}

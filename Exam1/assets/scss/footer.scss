@@ -1,0 +1,104 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    &__info-title {
+        margin-bottom: 29px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        input {
+            border: 0;
+            border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+            padding-bottom: 12px;
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.08em;
+            color: rgba(#262A3F, 0.5);
+            width: 470px;
+
+            &::placeholder {
+                font-weight: 200;
+            font-size: 16px;
+            }
+        }
+
+        .main-button {
+            margin-top: 15px;
+        }
+    }
+}
+
+.footer-last {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &__made-by {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        color: #262A3F;
+        opacity: 0.6;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        color: #262A3F;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &__form {
+            margin-top: 30px;
+            align-items: center;
+        }
+    }
+
+    .footer-last {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        &__form {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.quote {
+  background-image: url("./../../src/img/bg-quote.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9% 18% 9% 12%;
+  position: relative;
+}
+
+.quote__icon {
+  position: absolute;
+  left: 9%;
+  top: 70px;
+}
+
+.quote__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  color: #FFF;
+}
+
+.quote__author {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #FFF;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .quote__icon {
+    top: 35px;
+  }
+
+  .quote__text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .quote__author {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
