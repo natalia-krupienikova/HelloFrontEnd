@@ -1,0 +1,67 @@
+.short-description {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  margin-bottom: 150px;
+}
+
+.short-description__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  color: #262A3F;
+  margin-bottom: 20px;
+}
+
+.short-description__subtext {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: 0.8;
+  width: 440px;
+  margin-bottom: 50px;
+}
+
+.short-description .keyword-italic {
+  font-size: 44px;
+  line-height: 52px;
+}
+
+@media screen and (max-width: 1024px) {
+  .short-description {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .short-description {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .short-description__title {
+    font-size: 40px;
+  }
+
+  .short-description .keyword-italic {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .short-description__subtext {
+    width: auto;
+  }
+
+  .short-description .main-button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

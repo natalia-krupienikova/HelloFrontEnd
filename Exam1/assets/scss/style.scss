@@ -1,0 +1,172 @@
+@use "./header.scss";
+@use "./short-description.scss";
+@use "./statistics.scss";
+@use "./benefits.scss";
+@use "./quote.scss";
+@use "./video.scss";
+@use "./promises.scss";
+@use "./reviews-container.scss";
+@use "./footer.scss";
+
+* {margin: 0;}
+
+@font-face {
+    font-family: 'Lato'; 
+    src: url("./../fonts/Lato-Light.woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato'; 
+    src: url("./../fonts/Lato-Regular.woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("./../fonts/Lato-Bold.woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url("./../fonts/PlayfairDisplay-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url("./../fonts/PlayfairDisplay-Italic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Lato';
+    font-weight: 300;
+    background-image: url("./../../src/img/bg-first.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    main {
+        padding: 150px 135px 80px 135px;
+    }
+
+    footer {
+        padding: 0 135px 0 135px;
+    }
+}
+
+.keyword-italic {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #85BBB1;
+}
+
+.main-button {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #F1897B;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    
+    &::after {
+        content: "";
+        box-shadow: inset 10px 20px rgb(241 137 123 / 30%);
+        position: absolute;
+        bottom: -2px;
+        left: 16px;
+        width: 90%;
+        height: 13px;
+        overflow: hidden;
+    }
+
+    &:hover {
+        color: #e54f3a;
+
+        &::after {
+            box-shadow: inset 10px 20px rgb(229 79 58 / 30%);
+        }
+    }
+}
+
+.theme-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #262A3F;
+}
+
+.theme-text {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+.long-line {
+    border: 0;
+    height: 1px;
+    background:  #E4E4E4;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        main {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+        footer {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .long-line {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        main {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        footer {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .keyword-italic {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .theme-title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+    
+    .theme-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

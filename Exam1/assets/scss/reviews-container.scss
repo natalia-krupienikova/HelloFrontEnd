@@ -1,0 +1,92 @@
+.reviews-container {
+    &__title {
+        margin: 120px 0 20px 0;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(370px, max-content));
+        gap: 0 30px;
+        margin-top: 50px;
+    }
+}
+
+.review {
+    position: relative;
+
+    &__content {
+        position: absolute;
+        color: #fff;
+        top: 30px;
+        right: 40px;
+        bottom: 30px;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {      
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        opacity: 0.8;
+        flex: 1;
+    }
+
+    &__author {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .reviews-container {
+        text-align: center;
+
+        &__title {
+            margin: 60px 0 10px 0;
+        }
+
+        &__grid {
+            grid-template-columns: min(60%, 370px);
+            justify-content: center;
+
+            .review__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .reviews-container {
+        &__title {
+            margin: 5px 0 10px 0;
+        }
+    }
+
+    .reviews-container__grid {
+        grid-template-columns: min(90%, 370px);
+
+        .review {
+            &__content {
+                top: 15px;
+                right: 20px;
+                bottom: 15px;
+                left: 20px;
+            }
+
+            &__text {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
