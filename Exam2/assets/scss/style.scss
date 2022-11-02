@@ -1,0 +1,41 @@
+@use "./header";
+@use "./general";
+@use "./projects";
+@use "./news";
+@use "./gallery";
+@use "./contacts";
+@use "./footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo-img {
+    width: 241px;
+    height: 54px;
+}
+
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .line {
+        border: 0;
+        height: 1px;
+        background: #2C4058;
+        width: 100px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .white {
+        background: #fff;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
